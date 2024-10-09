@@ -358,6 +358,8 @@ END;
 				$propertyType = 'date';
 			} elseif ( $typeValue == $datatypeLabels['_eid'] ) {
 				$propertyType = 'external_id';
+			} elseif ( $typeValue == $datatypeLabels['_uri'] ) {
+				$propertyType = 'uri';
 			} else {
 				// This should hopefully never get called.
 				print "Error! Unsupported property type ($typeValue) for filter {$this->name}.";
